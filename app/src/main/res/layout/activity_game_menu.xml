@@ -17,7 +17,6 @@
         android:text="@string/jouer"
         android:textColor="@color/colorWhite"
         android:textSize="18sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button_menu_deconnexion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
