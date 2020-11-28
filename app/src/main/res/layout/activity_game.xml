@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_polygon"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <Button
+        android:id="@+id/button_game_valider"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape_rounded"
+        android:text="Jouer"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/button_stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="378dp"
+        android:layout_height="71dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_game_valider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+        <ImageView
+            android:id="@+id/game_rock"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:alpha="0.7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/game_paper"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/button_rock" />
+
+        <ImageView
+            android:id="@+id/game_paper"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:alpha="0.7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/game_rock"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/game_lizzard"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/button_paper" />
+
+        <ImageView
+            android:id="@+id/game_lizzard"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:alpha="0.7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/game_paper"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/game_cisor"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/button_lizzard" />
+
+        <ImageView
+            android:id="@+id/game_cisor"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:alpha="0.7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/game_lizzard"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/game_spock"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/button_cisor" />
+
+        <ImageView
+            android:id="@+id/game_spock"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:alpha="0.7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/game_cisor"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/button_spock" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button_stop"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape_rounded_accent_oranged"
+        android:text="Quitter"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_game_valider" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <ImageView
+        android:id="@+id/game_img_title"
+        android:layout_width="358dp"
+        android:layout_height="69dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_chifumi" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="116dp"
+        android:paddingLeft="70dp"
+        android:paddingRight="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_img_title">
+
+        <TextView
+            android:id="@+id/game_libelle_difficulte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Difficulté :"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/game_libelle_score"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/game_difficulte_niveau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/game_display_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:text="0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+        <TextView
+            android:id="@+id/game_libelle_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score : "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintStart_toStartOf="@+id/game_libelle_best_score"
+            app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3333" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.66666" />
+
+        <TextView
+            android:id="@+id/game_libelle_best_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meilleur score :"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/game_display_best_score"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+        <TextView
+            android:id="@+id/game_display_best_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="60dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline5" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="395dp"
+        android:layout_height="146dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+        <ImageView
+            android:id="@+id/game_img_player"
+            android:layout_width="180dp"
+            android:layout_height="130dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/game_img_adversaire"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/player_win" />
+
+        <ImageView
+            android:id="@+id/game_img_adversaire"
+            android:layout_width="180dp"
+            android:layout_height="130dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/game_img_player"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/adversaire_win" />
+
+        <ImageView
+            android:id="@+id/game_img_choix_player"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/game_img_player"
+            app:layout_constraintTop_toTopOf="@+id/game_img_player"
+            app:srcCompat="@drawable/question" />
+
+        <ImageView
+            android:id="@+id/game_img_choix_adversaire"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/game_img_adversaire"
+            app:layout_constraintTop_toTopOf="@+id/game_img_adversaire"
+            app:srcCompat="@drawable/question" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
