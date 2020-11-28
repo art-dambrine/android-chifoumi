@@ -1,6 +1,6 @@
 # Projet Android - application jeu du Chifoumi
 
-L'application est disponible au format .apk : art-dambrine.ovh/public-doc/chifoumi.apk
+L'application est disponible au format .apk : https://art-dambrine.ovh/public-doc/chifoumi.apk
 
 
 ![logo_chifumi](img/logo_chifumi.png)
