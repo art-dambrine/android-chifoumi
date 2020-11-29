@@ -19,7 +19,7 @@ L'application est disponible au format .apk : https://art-dambrine.ovh/public-do
 
 ## Introduction - sujet
 
-Nous développerons une application Android dans le but de recréer le jeu du chifoumi étendu (5 coups possibles). L'application sera développée en langage Java avec Android Studio. Nous avons fais le choix d'utiliser le système d'authentification et de stockage de Firebase proposé par la société Google.
+Nous développerons une application Android dans le but de recréer le jeu du chifoumi étendu (5 coups possibles). L'application sera développée en langage Java avec Android Studio. Nous avons faiy le choix d'utiliser le système d'authentification et de stockage de Firebase proposé par la société Google.
 
 Nous utilisons pour ce projet l'IDE Android Studio developpé par Jetbrains.
 
@@ -31,7 +31,7 @@ Nous utilisons pour ce projet l'IDE Android Studio developpé par Jetbrains.
 
 Pour le jeu nous avons différentes contraintes à respecter. 
 
-Premièrement nous devons authentifier l’utilisateur pour comptabiliser ses résultats et créer un classement avec nos différents utilisateurs inscrits. Pour cela nous utilisons la base de données dans le Cloud Firebase. L’utilisateur est amené à se connecter, ou à s’inscrire si c’est sa première connexion.
+**Premièrement** nous devons **authentifier l’utilisateur** pour comptabiliser ses résultats et créer un classement avec nos différents utilisateurs inscrits. Pour cela nous utilisons la base de données dans le Cloud Firebase. L’utilisateur est amené à se connecter, ou à s’inscrire si c’est sa première connexion.
 
 <p align="center">
   <img src="img/cpt-connexion.png" alt="cpt-connexion" width="50%"/>
@@ -71,7 +71,7 @@ La **quatrième contrainte** est de réaliser un **système de classement**. Ici
 </p>
 
 
-La **cinquième et dernière contrainte** est la déconnexion de l’utilisateur. Quand celui-ci clique sur le bouton de déconnexion quitte l'activité en cours et est invité à se reconnecter. Une fois déconnecté l’utilisateur n’a plus accès au jeu, ni au classement.
+La **cinquième et dernière contrainte** est la **déconnexion de l’utilisateur**. Quand celui-ci clique sur le bouton de déconnexion quitte l'activité en cours et est invité à se reconnecter. Une fois déconnecté l’utilisateur n’a plus accès au jeu, ni au classement.
 
 
 
