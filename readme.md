@@ -26,7 +26,7 @@ Nous développerons une application Android dans le but de recréer le jeu du ch
 
 Nous utilisons pour ce projet l'IDE Android Studio developpé par Jetbrains.
 
-<img src="/Users/arthurdambrine/Desktop/README ANDROID/img/android-studio.png" alt="android-studio"/>
+<img src="img/android-studio.png" alt="android-studio"/>
 
 
 
