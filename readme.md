@@ -7,9 +7,8 @@
 L'application est disponible au format .apk : https://art-dambrine.ovh/public-doc/chifoumi.apk
 
 ![logo_chifumi](img/logo_chifumi.png)
-
+   
    **Sommaire**
-
 
 - [Introduction - sujet](#introduction---sujet)
 - [Contraintes](#contraintes)
@@ -17,8 +16,6 @@ L'application est disponible au format .apk : https://art-dambrine.ovh/public-do
     
     - [Exemple de partie](#exemple-de-partie)
     
-      
-
 
 ## Introduction - sujet
 
@@ -43,7 +40,7 @@ Premièrement nous devons authentifier l’utilisateur pour comptabiliser ses r�
 Une fois l’utilisateur authentifié il arrivé sur sa page d’accueil. Cette page reprend les éléments principaux du jeu, en soi : les **règles**, le **choix du niveau de difficulté**, le **classement des joueurs**, la possibilité de **lancer le jeu** et la possibilité de se déconnecter de son compte.
 
 <p align="center">
-  <img src="img/cpt-menu.png" alt="cpt-menu" width="35%" />
+  <img src="img/cpt-menu.png" alt="cpt-menu" width="33%" />
 </p>
 
 La **seconde contrainte** mise en place est les **différentes situations de jeu**. C’est-à-dire les règles. Ici nous avons ajouté toutes les règles que le joueur doit connaitre pour joueur au jeu. Quand il cliquera ensuite sur joueur, il sera face à une intelligence qui fera des choix en fonction du niveau de difficulté sélectionné.
